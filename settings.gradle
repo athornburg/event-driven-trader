@@ -1,0 +1,4 @@
+rootProject.name = 'trader'
+include 'applications:account-application'
+include 'components'
+include 'components:account'
