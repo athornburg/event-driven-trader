@@ -2,13 +2,13 @@ package com.event.driven.market;
 
 public class Market {
 
-    void approveTrade(RequestTradeApprovalEvent trade) {
+    TradeSubmittedEvent approveTrade(RequestTradeApprovalEvent trade) {
         double randomNumber = Math.random();
 
-        if(randomNumber % 2 == 0) {
-            // send trade approved event
+        if(randomNumber % 3 == 0) {
+            return new TradeSubmittedEvent(trade.getId(), "REJECTED");
         } else {
-            // send trade rejected event
+            return new TradeSubmittedEvent(trade.getId(), "APPROVED");
         }
     }
 

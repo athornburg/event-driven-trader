@@ -1,4 +1,4 @@
-rootProject.name = 'trader'
+rootProject.name = 'account'
 include 'applications:account-application'
 include 'applications:portfolio-application'
 include 'applications:market-application'

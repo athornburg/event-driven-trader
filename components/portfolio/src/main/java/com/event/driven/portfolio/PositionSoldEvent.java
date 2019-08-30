@@ -1,11 +1,11 @@
-package com.event.driven.market;
+package com.event.driven.portfolio;
 
-public class RequestTradeApprovalEvent {
+public class PositionSoldEvent {
     private String id;
     private String ticker;
     private Long price;
 
-    public RequestTradeApprovalEvent(String id, String ticker, Long price) {
+    public PositionSoldEvent(String id, String ticker, Long price) {
         this.id = id;
         this.ticker = ticker;
         this.price = price;
