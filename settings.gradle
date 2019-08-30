@@ -1,4 +1,9 @@
 rootProject.name = 'trader'
 include 'applications:account-application'
+include 'applications:portfolio-application'
+include 'applications:market-application'
 include 'components'
 include 'components:account'
+include 'components:portfolio'
+include 'components:market'
+
