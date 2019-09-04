@@ -71,8 +71,8 @@ ___
 ___
 # Things we gain
 * A log of all the events
- * Could also do this by just keeping a audit list
-* But we arechitected things so its easy to add new features
+ * Could also do this by just keeping an audit list
+* But we architect things so its easy to add new features
   * do a complete rebuild
   * we can do temporal queries and search for states of applications at any given time
   * we can change and replay events that are wrong
@@ -96,24 +96,31 @@ ___
 
  ___
  # Rethinking your system in events is easy!
-  * Consider Orchestrating a few microservics
-    * Often have to create specific endpoints to handle requests
-    * These endpoints are sometimes coupled to other systems
-    * Whose responsibility is it to orchestrate everything?
-  * Instead think "Choreography"
-   ![](./dance.gif)
+ * There are two options orchestration and choreography
+ 
+    "In orchestration, we rely on a central brain to guide and drive the process, much like
+    the conductor in an orchestra.
+    With choreography, we inform each part of the system of its job, and let it work out the
+    details, like dancers all
+    finding their way and reacting to others around them in a ballet"
+        - Building Microservices by Sam Newman
 
-  ---
+___
+#Orchestration
+ * Often have to create specific endpoints to handle requests
+ * These endpoints are sometimes coupled to other systems
+ * Whose responsibility is it to orchestrate everything?
+---
 # Choreography
-* A single event can be dispatched
-* Systems can listen to the events and do their own thing
-* no need for complex orchestration
-
+ * A single event can be dispatched
+ * Systems can listen to the events and do their own thing
+ * no need for complex orchestration
+ * [Stack overflow](https://stackoverflow.com/questions/4127241/orchestration-vs-choreography)
 ___
 # The pros
 * super low latency
 * high decoupling of the system
-* adabtable
+* adaptable
 * independently deployable apps
 * logging, monitoring and auditing
 * easy to make async
@@ -144,7 +151,7 @@ ___
 ___
 # Setting up spring with kafka is easy!
  * [See git repo here](https://github.com/athornburg/event-driven-trader)
- * Short code walkthrough incoming
+ * Short code walk through incoming
 
 ___
 
