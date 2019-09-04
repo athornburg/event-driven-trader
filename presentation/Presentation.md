@@ -60,7 +60,6 @@ ___
  * Martin Fowler in a blog post recommends only using CQRS in a single "Bounded context"
  * Use DDD to organize aggregates and work with product to create a "Ubiquitous Language" 
  * when you need more performance and CRUD is too complex
- ___
 
  ___
 # Event sourcing
@@ -106,7 +105,7 @@ ___
         - Building Microservices by Sam Newman
 
 ___
-#Orchestration
+# Orchestration
  * Often have to create specific endpoints to handle requests
  * These endpoints are sometimes coupled to other systems
  * Whose responsibility is it to orchestrate everything?
@@ -159,5 +158,5 @@ ___
 
 [Martin Fowler on Events](https://martinfowler.com/articles/201701-event-driven.html)
 [Martin Fowler on CQRS](https://martinfowler.com/bliki/CQRS.html)
-[Martin Fowler on Event Sourcing][https://martinfowler.com/eaaDev/EventSourcing.html]
+[Martin Fowler on Event Sourcing](https://martinfowler.com/eaaDev/EventSourcing.html)
 [Chris Richardson on Sagas](https://microservices.io/patterns/data/event-driven-architecture.html)
